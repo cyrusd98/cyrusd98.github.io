@@ -419,48 +419,7 @@ var levels = {
             "queue" : new QueueVariable("queue", new ObjectType("Golem"), 0)
         }
     ),
-    /*"CV1-simple": new Level(
-        "CV1-simple",
-        "Condition Variables",
-        "Don't worry. It's not <i>that</i> hard.",
-        "Condition variables are, unfortunately, still a rather difficult topic. We won't even try to get you a confusing story here, they're just hard. Try. If you fail, skip.",
-        "Your skill is unmatched, Master Scheduler! Truly no program is safe before you.",
-        [
-            new Thread([
-                createOuterWhile(),
-                new MonitorEnterInstruction("mutex"),
-                new IfInstruction(new QueueIsEmptyExpression("queue"), "if"),
-                createMonitorWait("mutex"),
-                new EndIfInstruction("if"),
-                createDequeueUnsafe("queue"),
-                new MonitorExitInstruction("mutex"),
-                createOuterWhileEnd()
-            ]),
-            new Thread([
-                createOuterWhile(),
-                new MonitorEnterInstruction("mutex"),
-                new IfInstruction(new QueueIsEmptyExpression("queue"), "if"),
-                createMonitorWait("mutex"),
-                new EndIfInstruction("if"),
-                createDequeueUnsafe("queue"),
-                new MonitorExitInstruction("mutex"),
-                createOuterWhileEnd()
-            ]),
-            new Thread([
-                createOuterWhile(),
-                new MonitorEnterInstruction("mutex"),
-                createEnqueueUnsafe("queue", 42),
-                new MonitorPulseAll("mutex"),
-                new MonitorExitInstruction("mutex"),
-                createOuterWhileEnd()
-            ])
-        ],
-        {
-            "mutex" : new ObjectVariable("mutex", "unimportant"),
-            "queue" : new QueueVariable("queue", new IntegerType(), 0)
-        }
-    ),*/
-    /*"CV1-simple": new Level(
+    "CV1-simple": new Level(
         "CV1-simple",
         "Condition Variables",
         "Don't worry. It's not <i>that</i> hard.",
@@ -500,6 +459,6 @@ var levels = {
             "mutex" : new ObjectVariable("mutex", "unimportant"),
             "queue" : new QueueVariable("queue", new IntegerType(), 0)
         }
-    )*/
+    )
 
 };

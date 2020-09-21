@@ -52,13 +52,13 @@ var campaign = [
             "S3-producerConsumer"
         ]
     },
-    /*{
+    {
         name : "Condition Variables",
         description : "We had to get to them eventually...",
         levels : [
             "CV1-simple"
         ]
-    },*/
+    },
     {
         name : "The Final Stretch",
         description : "Defeat the Parallel Wizard using everything you have learned so far!",

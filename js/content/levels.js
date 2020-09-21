@@ -460,7 +460,7 @@ var levels = {
             "queue" : new QueueVariable("queue", new IntegerType(), 0)
         }
     ),*/
-    "CV1-simple": new Level(
+    /*"CV1-simple": new Level(
         "CV1-simple",
         "Condition Variables",
         "Don't worry. It's not <i>that</i> hard.",
@@ -500,6 +500,6 @@ var levels = {
             "mutex" : new ObjectVariable("mutex", "unimportant"),
             "queue" : new QueueVariable("queue", new IntegerType(), 0)
         }
-    )
+    )*/
 
 };
